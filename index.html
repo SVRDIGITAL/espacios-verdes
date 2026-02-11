@@ -2,48 +2,128 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Espacios Verdes</title>
+  <title>Espacios verdes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-content">
-    <h1>Espacios verdes</h1>
-    <p>
-      Somos expertos en jardinería, una empresa de confianza que quiere
-      llevar la naturaleza a tu hogar.
-    </p>
-  </div>
+<!-- ====== HEADER + MENU ====== -->
+<header class="header">
+  <div class="logo">Espacios Verdes</div>
+
+  <nav class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 </header>
 
-<section class="servicios">
-  <h2>Nuestros servicios</h2>
-
-  <div class="grid-servicios">
-
-    <ul>
-      <li>Diseños de jardines</li>
-      <li>Empradizadas</li>
-      <li>Instalación de jardines</li>
-      <li>Mantenimiento de temporada</li>
-    </ul>
-
-    <ul>
-      <li>Plantas ornamentales</li>
-      <li>Interior y exterior</li>
-      <li>Muros verdes verticales</li>
-      <li>Cubiertas verdes</li>
-    </ul>
-
+<!-- ====== HERO ====== -->
+<section class="hero" id="inicio">
+  <div class="hero-contenido">
+    <h1>Espacios verdes</h1>
+    <p>
+      Somos expertos en jardinería, una empresa de confianza que quiere llevar la naturaleza a tu hogar.
+    </p>
   </div>
 </section>
 
+<main class="contenedor">
+
+  <!-- ====== SERVICIOS ====== -->
+  <h2 class="titulo" id="servicios">Nuestros servicios</h2>
+
+  <section class="servicios">
+
+    <div class="card">
+      <h3>Diseño y construcción de jardines</h3>
+      <ul>
+        <li>
+          <a href="diseno.html" target="_blank">Diseño de jardines</a>
+        </li>
+        <li>
+          <a href="empradizado.html" target="_blank">Jardines empradizados</a>
+        </li>
+        <li>
+          <a href="instalacion.html" target="_blank">Instalación de jardines</a>
+        </li>
+        <li>
+          <a href="mantenimiento.html" target="_blank">Mantenimiento de temporada a tu jardín</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Servicios especializados</h3>
+      <ul>
+        <li>
+          <a href="ornamentales.html" target="_blank">
+            Plantas ornamentales para interior y exterior
+          </a>
+        </li>
+        <li>
+          <a href="muros.html" target="_blank">
+            Muros verdes verticales
+          </a>
+        </li>
+        <li>
+          <a href="tierra.html" target="_blank">
+            Tierra negra y tierra abonada
+          </a>
+        </li>
+        <li>
+          <a href="cubiertas.html" target="_blank">
+            Cubiertas verdes
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  
+  <!-- ====== GALERIA ====== -->
+<section class="galeria-previa" id="galeria">
+
+  <h2 class="titulo">Nuestros proyectos</h2>
+
+  <div class="galeria-card">
+
+    <h3>Ver galería de trabajos</h3>
+
+    <p>
+      Conoce algunos de nuestros proyectos realizados en diseño,
+      instalación y mantenimiento de jardines.
+    </p>
+
+    <a href="galeria.html" target="_blank" class="btn">
+      Abrir galería
+    </a>
+
+  </div>
+
+</section>
+
+
+  <!-- ====== CTA ====== -->
+  <section class="cta" id="contacto">
+    <h2>Haz realidad tu espacio verde</h2>
+    <p>Contáctanos y transforma tu hogar con un diseño natural y profesional.</p>
+    <a class="btn" href="https://wa.me/573227236601" target="_blank">
+      Escríbenos por WhatsApp
+    </a>
+  </section>
+
+</main>
+
 <footer class="footer">
-  <p>Espacios Verdes © 2026</p>
+  © 2026 - Espacios verdes | Jardinería y diseño de jardines
 </footer>
+
+<a class="whatsapp" href="https://wa.me/573227236601" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 
 </body>
 </html>
