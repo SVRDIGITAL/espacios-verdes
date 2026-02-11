@@ -1,0 +1,113 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicio-hero{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* fondo con difuminado */
+.fondo{
+  position:absolute;
+  inset:0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  transform: scale(1.1);
+  z-index:1;
+}
+
+/* oscurecido encima del blur */
+.fondo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.45);
+}
+
+/* imagen específica */
+.fondo-diseno{
+  background-image: url("img/diseno.jpg");
+}
+
+.contenido-servicio{
+  position: relative;
+  z-index:2;
+  min-height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+  padding:40px;
+  color:#ffffff;
+}
+
+.contenido-servicio h1{
+  font-size:3rem;
+  margin-bottom:20px;
+  letter-spacing:1px;
+}
+
+.contenido-servicio p{
+  max-width:800px;
+  font-size:1.1rem;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+.btn-volver{
+  text-decoration:none;
+  background:#2ecc71;
+  color:#fff;
+  padding:12px 28px;
+  border-radius:30px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn-volver:hover{
+  background:#27ae60;
+}
+
+/* responsive */
+@media (max-width:768px){
+
+  .contenido-servicio h1{
+    font-size:2.2rem;
+  }
+
+  .contenido-servicio p{
+    font-size:1rem;
+  }
+
+}
+.fondo-empradizado{
+  background-image: url("img/empradizado.jpg");
+}
+.fondo-instalacion{
+  background-image: url("img/instalacion.jpg");
+}
+.fondo-mantenimiento{
+  background-image: url("img/mantenimiento.jpg");
+}
+.fondo-ornamentales{
+  background-image: url("img/ornamentales.jpg");
+}
+.fondo-muros{
+  background-image: url("img/muros.jpg");
+}
+.fondo-tierra{
+  background-image: url("img/tierra.jpg");
+}
+.fondo-cubiertas{
+  background-image: url("img/cubiertas.jpg");
+}
